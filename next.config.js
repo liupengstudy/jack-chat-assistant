@@ -5,6 +5,10 @@ const nextConfig = {
     unoptimized: true,
     domains: ['api.openai.com'],
   },
+  // Cloudflare Pages specific configuration
+  experimental: {
+    runtime: 'edge',
+  },
 }
 
 module.exports = nextConfig 
